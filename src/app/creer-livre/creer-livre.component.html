@@ -1,0 +1,6 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>titre</label><input type="text" [formControl]="fTitre"/><br>
+    <label>auteur</label><input type="text" [formControl]="fAuteur"/><br>
+    <button type="submit" [disabled]="!form.valid">ajouter le livre </button>
+</form>
