@@ -22,8 +22,8 @@ export class LivresService {
 
 
 
-  constructor(private livreService: LivresService) {
-    livreService.ajouterLivre(new Livre('Germinal', 'Emile Zola'))
-    livreService.ajouterLivre(new Livre('Tunnels', 'Roderick Gordon'))
+  constructor() {
+    this.ajouterLivre(new Livre('Germinal', 'Emile Zola'))
+    this.ajouterLivre(new Livre('Tunnels', 'Roderick Gordon'))
    }
 }
