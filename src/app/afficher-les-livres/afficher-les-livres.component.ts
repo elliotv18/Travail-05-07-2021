@@ -13,7 +13,7 @@ export class AfficherLesLivresComponent implements OnInit {
   
   constructor(private livreService: LivresService) {
     
-    this.listeLivres = livreService.listerLivre()
+    this.listeLivres = this.livreService.listerLivre()
     
    }
 
